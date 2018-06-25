@@ -182,14 +182,18 @@ SyntaxHighlighter.brushes.Abap = function()
 					' PUBLIC SECTION RAISE EVENT SET HANDLER';
 
 	this.regexList = [
+		// one line comments
 		{ regex: /^[\*].*$|["].*$/gm,
-			css: 'comments' },		// one line comments
-		{ regex: SyntaxHighlighter.regexLib.singleQuotedString,	    
-			css: 'string' },		// strings
+			css: 'comments' },
+		// strings
+		{ regex: /'[^'"]*'(?=(?:[^"]*"[^"]*")*[^"]*$)/gm,	    
+			css: 'string' },
+		// numbers
 		{ regex: /\b([\d]+(\.[\d]+)?|0x[a-f0-9]+)\b/gi,		    
-			css: 'value' },		// numbers
+			css: 'value' },	
+		// abap keyword
 		{ regex: new RegExp(this.getKeywords(keywords), 'gm'),	    
-			css: 'keyword' }		// abap keyword
+			css: 'keyword' }		
 	];
 
 	this.forHtmlScript({
