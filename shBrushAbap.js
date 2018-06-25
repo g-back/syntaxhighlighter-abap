@@ -187,7 +187,7 @@ SyntaxHighlighter.brushes.Abap = function()
 			css: 'comments' },
 		// strings
 		{ regex: /'[^'"]*'(?=(?:[^"]*"[^"]*")*[^"]*$)/gm,	    
-			css: 'string' },
+			css: 'variable' },
 		// numbers
 		{ regex: /\b([\d]+(\.[\d]+)?|0x[a-f0-9]+)\b/gi,		    
 			css: 'value' },	
