@@ -1,6 +1,6 @@
 /**
  * Custom Brush for Syntax Hightlighting in Confluence (version 6.71 as of creation)
- * Brush written by Goran Back-Zerebni
+ * Brush written by G.Back
  * 
  * Brush @version
  * 1.0.0 (June 25 2018)
